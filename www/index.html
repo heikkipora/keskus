@@ -1,120 +1,118 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="fi" lang="fi">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi">
 <head>
-	<title>Keskus - Centralen</title>
-  	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-	<meta name="robots" content="all" />
-	<meta name="description" content="Keskus - Centralen on Loviisan keskustan tuntumassa, Eteläharjulla, sijaitseva nykyaikainen tapahtumakeskus. Tilamme ovat vuokrattavissa sekä yksityis- että yritystilaisuuksiin." />
-	<meta name="keywords" content="Loviisa, Lovisa, juhlat, saunatila, catering, häät, kokous, kokouspalvelut" />
-	<meta property="og:title" content="Keskus - Centralen" />
-	<meta property="og:image" content="http://keskus-centralen.fi/images/preview.gif" />
-	<meta property="og:url" content="http://keskus-centralen.fi/" />
-	<meta property="og:site_name" content="Keskus - Centralen" />
-	<meta property="og:type" content="website" />
-	<meta name="google-site-verification" content="r4wSe8VSzGE8NEbEjbki-yXZ5nhD0s4DSU305FDF8Gs" />
-	<link rel="stylesheet" href="css/keskus.css" type="text/css" media="screen"/>
-	<link rel="stylesheet" href="css/keskus-print.css" type="text/css" media="print"/>
-	<link rel="stylesheet" href="css/imageflow.packed.css" type="text/css" media="screen"/>
-	<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
-	<script type="text/javascript" src="js/imageflow.packed.js"></script>
-	<script type="text/javascript">
+  <title>Keskus - Centralen</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <meta name="robots" content="all"/>
+  <meta name="description" content="Keskus - Centralen on Loviisan keskustan tuntumassa, Eteläharjulla, sijaitseva nykyaikainen tapahtumakeskus. Tilamme ovat vuokrattavissa sekä yksityis- että yritystilaisuuksiin."/>
+  <meta name="keywords" content="Loviisa, Lovisa, juhlat, saunatila, catering, häät, kokous, kokouspalvelut"/>
+  <meta property="og:title" content="Keskus - Centralen"/>
+  <meta property="og:image" content="http://keskus-centralen.fi/images/preview.gif"/>
+  <meta property="og:url" content="http://keskus-centralen.fi/"/>
+  <meta property="og:site_name" content="Keskus - Centralen"/>
+  <meta property="og:type" content="website"/>
+  <meta name="google-site-verification" content="r4wSe8VSzGE8NEbEjbki-yXZ5nhD0s4DSU305FDF8Gs"/>
+  <link rel="stylesheet" href="css/keskus.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="css/keskus-print.css" type="text/css" media="print"/>
+  <link rel="stylesheet" href="css/imageflow.packed.css" type="text/css" media="screen"/>
+  <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+  <script type="text/javascript" src="js/imageflow.packed.js"></script>
+  <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-23418623-1']);
     _gaq.push(['_trackPageview']);
-
-	function track(category, action, label) {
-		_gaq.push(['_trackEvent', category, action, label]);
-	}
-
-	function highlightChapter(id) {
-		$('#tilat p.box').removeClass('highlight');
-		$('#tilat #'+id).addClass('highlight');
-	}
-
-	$(function() {
-		new ImageFlow().init({ ImageFlowID: 'galleria', 
-         					   reflections: false, 
-    						   reflectionP: 0.4,
-    						   slider: false,
-                			   captions: false,
-                			   startID: 4,
-                			   aspectRatio: 2.9, 
-                          	   imagesHeight: 0.7,
-                          	   imageFocusM: 1.4,
-                          	   imageCursor: 'pointer'});
-        highlightChapter('akvaario');
-
-		$('a').click(function(elem) {
-			track('Linkit', $(elem).attr("title"));
-		});
-
-		$('#galleria img').click(function(elem) {
-			highlightChapter($(elem.target).attr("data-ref"));
-		});
-	});
-    </script>
+    function track(category, action, label) {
+      _gaq.push(['_trackEvent', category, action, label]);
+    }
+    function highlightChapter(id) {
+      $('#tilat p.box').removeClass('highlight');
+      $('#tilat #' + id).addClass('highlight');
+    }
+    $(function () {
+      new ImageFlow().init({ ImageFlowID:'galleria',
+        reflections:false,
+        reflectionP:0.4,
+        slider:false,
+        captions:false,
+        startID:4,
+        aspectRatio:2.9,
+        imagesHeight:0.7,
+        imageFocusM:1.4,
+        imageCursor:'pointer'});
+      highlightChapter('akvaario');
+      $('a').click(function (elem) {
+        track('Linkit', $(elem).attr("title"));
+      });
+      $('#galleria img').click(function (elem) {
+        highlightChapter($(elem.target).attr("data-ref"));
+      });
+    });
+  </script>
 </head>
 <body>
 <img class="hide-on-screen" src="images/logo.gif" style="width: 18cm;"/>
+
 <div id="header">
-	<div id="osoite" class="content-slice">
-		<p>
-			<span class="address"><a title="Google Maps" href="http://maps.google.fi/maps?f=q&source=s_q&hl=fi&geocode=&q=Etel%C3%A4harju+2,+Loviisa&aq=0&sll=62.593341,27.575684&sspn=11.435124,41.264648&ie=UTF8&hq=&hnear=Etel%C3%A4harju+2,+07920+Loviisa&ll=60.44871,26.235867&spn=0.023833,0.080595&z=14">Eteläharju 2, 07900 Loviisa</a></span>
-			<span class="email"><a title="info@keskus-centralen.fi" href="mailto:info@keskus-centralen.fi">info@keskus-centralen.fi</a></span>
-			<span class="phone">050 511 2466 (Merja)</span>
-			<span class="phone">040 511 6466 (Juha)</span>
-		</p>
-	</div>
-
-	<div id="logo" class="content-slice">
-	</div>
-
-	<div id="esittely" class="content-slice">
-		<p>Keskus - Centralen on Loviisan keskustan tuntumassa, Eteläharjulla, sijaitseva nykyaikainen tapahtumakeskus. Tilamme ovat vuokrattavissa sekä yksityis- että yritystilaisuuksiin. Ota rohkeasti yhteyttä niin mietitään yhdessä miten uudet upeat tilamme täyttävät sinun tarpeesi!<br/><br/><i>Merja ja Juha Saario, keskuksen pyörittäjät</i></p>
-	</div>
+  <div id="osoite" class="content-slice">
+    <p>
+      <span class="address"><a title="Google Maps" href="http://maps.google.fi/maps?f=q&source=s_q&hl=fi&geocode=&q=Etel%C3%A4harju+2,+Loviisa&aq=0&sll=62.593341,27.575684&sspn=11.435124,41.264648&ie=UTF8&hq=&hnear=Etel%C3%A4harju+2,+07920+Loviisa&ll=60.44871,26.235867&spn=0.023833,0.080595&z=14">Eteläharju
+        2, 07900 Loviisa</a></span>
+      <span class="email"><a title="info@keskus-centralen.fi" href="mailto:info@keskus-centralen.fi">info@keskus-centralen.fi</a></span>
+      <span class="phone">050 511 2466 (Merja)</span>
+      <span class="phone">040 511 6466 (Juha)</span>
+    </p>
+  </div>
+  <div id="logo" class="content-slice"></div>
+  <div id="esittely" class="content-slice">
+    <p>Keskus - Centralen on Loviisan keskustan tuntumassa, Eteläharjulla, sijaitseva nykyaikainen tapahtumakeskus. Tilamme ovat vuokrattavissa sekä yksityis- että
+      yritystilaisuuksiin. Ota rohkeasti yhteyttä niin mietitään yhdessä miten uudet upeat tilamme täyttävät sinun tarpeesi!<br/><br/><i>Merja ja Juha Saario, keskuksen
+        pyörittäjät</i></p>
+  </div>
 </div>
 <div id="tilat" class="content-slice">
-	<h1>Tilat</h1>
-	<p class="hide-in-print" style="padding: 0px 20px; font-size: 15px;">Tutustu tiloihimme tarkemmin klikkaamalla allaolevia kuvia.</p>
-	<div id="galleria" class="imageflow hide-in-print">
-		<img src="images/1.t.jpg" longdesc="images/1.jpg" data-ref="akvaario"/>
-		<img src="images/2.t.jpg" longdesc="images/2.jpg" data-ref="akvaario"/>
-		<img src="images/3.t.jpg" longdesc="images/3.jpg" data-ref="akvaario"/>
-		<img src="images/5.t.jpg" longdesc="images/5.jpg" data-ref="keittio"/>
-		<img src="images/6.t.jpg" longdesc="images/6.jpg" data-ref="akvaario"/>
-		<img src="images/7.t.jpg" longdesc="images/7.jpg" data-ref="akvaario"/>
-		<img src="images/8.t.jpg" longdesc="images/8.jpg" data-ref="akvaario"/>
-		<img src="images/4.t.jpg" longdesc="images/4.jpg" data-ref="akvaario"/>
-	</div>
-	<p class="box" id="akvaario">
-		<strong>Akvaario</strong> on katutasossa sijaitseva 220 neliömetrin nykyaikainen monitoimitila.
-		Täällä voit järjestää perhejuhlat, pitää tehokkaan kokouksen, koulutuksen tai seminaarin. Tilassa on esiintymiskoroke ja se on varustettu ajanmukaisin AV-laittein.
-		Katutason tilat valmistuvat kesäksi.
-	</p>
-	<p class="box" id="siivenalla">
-		<strong>Siiven Alla</strong> on alakertaan rakennettava 130 neliömetrin 20 hengelle tarkoitettu viihtyisä sauna- ja kokousosasto.
-		Tilassa järjestät pienempimuotoisia tilaisuuksia intiimissä ilmapiirissä. Tila varustetaan myös ajanmukaisin AV-laittein.
-		Alakerran tiloissa päästään saunomaan loppuvuodesta.
-	</p>
-	<p class="box" id="keittio">
-		<strong>Catering- ja tilauskeittiömme</strong> valmistaa tilaisuuteesi lähi- ja luomuruokaa kerralla jopa 50 - 80 hengelle. Toimitamme keittiöstämme ruokia myös toivomaasi kohteeseen.
-		Tarvittavat astiat ja kalusteet ulkoteltoista kaasugrilliin vuokraat kätevästi kauttamme.
-	</p>
-</div>
+  <h1>Tilat</h1>
+  <p class="hide-in-print" style="padding: 0px 20px; font-size: 15px;">Tutustu tiloihimme tarkemmin klikkaamalla allaolevia kuvia.</p>
 
+  <div id="galleria" class="imageflow hide-in-print">
+    <img src="images/1.t.jpg" longdesc="images/1.jpg" data-ref="akvaario"/>
+    <img src="images/2.t.jpg" longdesc="images/2.jpg" data-ref="akvaario"/>
+    <img src="images/3.t.jpg" longdesc="images/3.jpg" data-ref="akvaario"/>
+    <img src="images/5.t.jpg" longdesc="images/5.jpg" data-ref="keittio"/>
+    <img src="images/6.t.jpg" longdesc="images/6.jpg" data-ref="akvaario"/>
+    <img src="images/7.t.jpg" longdesc="images/7.jpg" data-ref="akvaario"/>
+    <img src="images/8.t.jpg" longdesc="images/8.jpg" data-ref="akvaario"/>
+    <img src="images/4.t.jpg" longdesc="images/4.jpg" data-ref="akvaario"/>
+  </div>
+  <p class="box" id="akvaario">
+    <strong>Akvaario</strong> on katutasossa sijaitseva 220 neliömetrin nykyaikainen monitoimitila.
+    Täällä voit järjestää perhejuhlat, pitää tehokkaan kokouksen, koulutuksen tai seminaarin. Tilassa on esiintymiskoroke ja se on varustettu ajanmukaisin AV-laittein.
+    Katutason tilat valmistuvat kesäksi. </p>
+  <p class="box" id="siivenalla">
+    <strong>Siiven Alla</strong> on alakertaan rakennettava 130 neliömetrin 20 hengelle tarkoitettu viihtyisä sauna- ja kokousosasto.
+    Tilassa järjestät pienempimuotoisia tilaisuuksia intiimissä ilmapiirissä. Tila varustetaan myös ajanmukaisin AV-laittein.
+    Alakerran tiloissa päästään saunomaan loppuvuodesta. </p>
+  <p class="box" id="keittio">
+    <strong>Catering- ja tilauskeittiömme</strong> valmistaa tilaisuuteesi lähi- ja luomuruokaa kerralla jopa 50 - 80 hengelle. Toimitamme keittiöstämme ruokia myös
+    toivomaasi kohteeseen.
+    Tarvittavat astiat ja kalusteet ulkoteltoista kaasugrilliin vuokraat kätevästi kauttamme. </p>
+</div>
 <div class="inverted">
-	<div id="historia" class="content-slice">
-		<h1>Historia</h1>
-		<p>Merjan isovanhemmat perustivat alkuperäisen Ravintola Keskuksen vuonna 1932 Helsingin Etelä-Haagaan. Vuonna 1938 Keskus siirtyi funkkistyylisen kivirakennuksen siipiosaan jossa toiminta jatkui vaiherikkaana aina 50-luvulle saakka.</p>
-		<p>Merja ja Juha ostivat Loviisan Eteläharjulta 70-luvulla valmistuneen funkkistyylisen kerrostalon liikesiiven. Tiloissa on aiemmin toiminut mm. ruokakauppa ja autoliike mutta viimeisen vuosikymmenen tilat olivat rapistuneet tyhjillään.</p>
-		<p>Monta ideaa oli kaksikon päässä pyörinyt etsittäessä tiloille sopivaa käyttötarkoitusta: varastoja, loft-asuntoja, ruokakauppa ja muita mitä ihmeellisempiä juttuja. Jotenkin vain "siiven" henki putkahti esiin ja mielikuvitus sai vallan. Asia oli päätetty: toimintakeskus, tilaussauna, viihdettä, kokouksia, ruokaa, yhdessäoloa.</p>
-		<p>Katutasoon siis tulkoon yksi suuri sali keittiöineen ja alakertaan hulppea saunaosasto kylpevälle kansalle. Ystävät jakoivat auliisti ideoitaan ja näin AKVAARIO ja SIIVEN ALLA saivat sinettinsä.</p>
-	</div>
-	<div id="credits" class="content-slice">
-		<p>/ web design and tech by Drillsoft /</p>
-	</div>
+  <div id="historia" class="content-slice">
+    <h1>Historia</h1>
+    <p>Merjan isovanhemmat perustivat alkuperäisen Ravintola Keskuksen vuonna 1932 Helsingin Etelä-Haagaan. Vuonna 1938 Keskus siirtyi funkkistyylisen kivirakennuksen
+      siipiosaan jossa toiminta jatkui vaiherikkaana aina 50-luvulle saakka.</p>
+    <p>Merja ja Juha ostivat Loviisan Eteläharjulta 70-luvulla valmistuneen funkkistyylisen kerrostalon liikesiiven. Tiloissa on aiemmin toiminut mm. ruokakauppa ja
+      autoliike mutta viimeisen vuosikymmenen tilat olivat rapistuneet tyhjillään.</p>
+    <p>Monta ideaa oli kaksikon päässä pyörinyt etsittäessä tiloille sopivaa käyttötarkoitusta: varastoja, loft-asuntoja, ruokakauppa ja muita mitä ihmeellisempiä
+      juttuja. Jotenkin vain "siiven" henki putkahti esiin ja mielikuvitus sai vallan. Asia oli päätetty: toimintakeskus, tilaussauna, viihdettä, kokouksia, ruokaa,
+      yhdessäoloa.</p>
+    <p>Katutasoon siis tulkoon yksi suuri sali keittiöineen ja alakertaan hulppea saunaosasto kylpevälle kansalle. Ystävät jakoivat auliisti ideoitaan ja näin AKVAARIO ja
+      SIIVEN ALLA saivat sinettinsä.</p>
+  </div>
+  <div id="credits" class="content-slice">
+    <p>/ web design and tech by Drillsoft /</p>
+  </div>
 </div>
-
 <script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
 </body>
 </html>

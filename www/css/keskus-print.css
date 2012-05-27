@@ -1,29 +1,84 @@
-body,div,p,ul,h1,h2 { margin: 0; padding: 0; }
-p { font-family: Helvetica, Arial, sans-serif; }
-body { color: black; }
+body, div, p, ul, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
 
-p { font-size: 18px; font-weight: lighter; }
-h1 { font-size: 42px; font-family: Palatino, 'Times New Roman', serif; }
-.content-slice { padding: 20px 0; }
+p {
+    font-family: Helvetica, Arial, sans-serif;
+}
 
-a { color: black; text-decoration: none; }
+body {
+    color: black;
+}
 
-.c:after { content: "."; display: block; clear: both; height: 0; visibility: hidden;}
+p {
+    font-size: 18px;
+    font-weight: lighter;
+}
 
-.hide-in-print {display: none;}
+h1 {
+    font-size: 42px;
+    font-family: Palatino, 'Times New Roman', serif;
+}
 
-#osoite p { }
-#osoite span { display: block; }
+.content-slice {
+    padding: 20px 0;
+}
 
-#esittely p { margin: 6px 0; padding: 0;}
+a {
+    color: black;
+    text-decoration: none;
+}
 
-#tilat p { margin: 6px 0; }
+.c:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
 
-#ajankohtaista img { display: none; }
-#ajankohtaista p { margin-bottom: 10px; }
+.hide-in-print {
+    display: none;
+}
 
-#logo { display: none; }
-#galleria { display: none; }
-#historia { display: none; }
-#credits { display: none; }
+#osoite p {
+}
+
+#osoite span {
+    display: block;
+}
+
+#esittely p {
+    margin: 6px 0;
+    padding: 0;
+}
+
+#tilat p {
+    margin: 6px 0;
+}
+
+#ajankohtaista img {
+    display: none;
+}
+
+#ajankohtaista p {
+    margin-bottom: 10px;
+}
+
+#logo {
+    display: none;
+}
+
+#galleria {
+    display: none;
+}
+
+#historia {
+    display: none;
+}
+
+#credits {
+    display: none;
+}
 

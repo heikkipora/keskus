@@ -1,0 +1,47 @@
+body,div,p,ul,h1,h2 { margin: 0; padding: 0; }
+p,h2 { font-family: Helvetica, Arial, sans-serif; }
+body { background: #F5F5F5; color: #4C4C4C; }
+
+p { font-size: 18px; font-weight: lighter; }
+strong {font-weight:bold;}
+h1 { font-size: 54px; font-family: Palatino, 'Times New Roman', serif; margin-left: 20px; margin-bottom: 10px; }
+h2 { margin-top: 0px; padding-top: 0px;}
+.content-slice { width: 1000px; margin: 0 auto; padding: 20px 0; }
+.inverted { background-color: #84736a; color: white; }
+
+a { color: black; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.c:after { content: "."; display: block; clear: both; height: 0; visibility: hidden;}
+
+#osoite p { margin: 0 auto; width: 54em;}
+#osoite span { margin: 0px 14px; padding-top: 2px; }
+.phone { background: transparent url('../images/symbols.gif') 0 0px no-repeat; padding-left: 22px; }
+.email { background: transparent url('../images/symbols.gif') 0 -38px no-repeat; padding-left: 22px; }
+.address { background: transparent url('../images/symbols.gif') 0 -73px no-repeat; padding-left: 22px; }
+
+#header { background-image: -moz-radial-gradient(center bottom , circle farthest-side, white 0pt, #F5F5F5 100%); background-image: -webkit-radial-gradient(center bottom , circle farthest-side, white 0pt, #F5F5F5 100%); border-bottom: 1px solid #E8E8E8; box-shadow: 0 1px 0 white; -moz-box-shadow: 0 1px 0 white; -webkit-box-shadow: 0 1px 0 white; }
+
+#logo { background: transparent url('../images/logo.gif') 0 20px no-repeat; height: 64px;  }
+
+#esittely p { margin: 6px 0; padding: 0px 20px;}
+
+#tilat p { margin: 6px 0; }
+
+#galleria { border: 1px solid rgb(244,244,244); -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+#galleria_images img { -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; -moz-box-shadow: 0 0 3px #404040; -webkit-box-shadow: 0 0 3px #404040; box-shadow: 0 0 3px #404040; }
+
+#historia { background: transparent url('../images/historia.gif') 480px 20px no-repeat; height: 365px; margin-top: 10px; }
+#historia p { margin: 6px 550px 6px 20px; font-size: 15px; }
+
+#ajankohtaista p { margin-bottom: 10px; }
+#ajankohtaista img {float: left; margin-right: 10px; }
+
+.hide-on-screen { display: none; }
+
+.box { background-color: white; background-image: -moz-linear-gradient(center top , white, #F7F7F7); box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); margin-bottom: 35px; padding: 20px; }
+.highlight { box-shadow: 1px 1px 5px rgba(255, 0, 0, 0.8); -moz-box-shadow: 1px 1px 5px rgba(255, 0, 0, 0.8); -webkit-box-shadow: 1px 1px 5px rgba(255, 0, 0, 0.8); }
+.column { float: left; width: 280px; }
+.column img { margin-bottom: 20px; }
+    
+#credits p { text-align: right; font-size: 12px; }

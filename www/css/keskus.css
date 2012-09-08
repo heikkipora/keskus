@@ -152,6 +152,7 @@ a:hover {
 .box {
     background-color: white;
     background-image: -moz-linear-gradient(center top, white, #F7F7F7);
+    background-image: -webkit-linear-gradient(center top, white, #F7F7F7);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);

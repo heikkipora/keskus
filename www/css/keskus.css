@@ -179,3 +179,7 @@ a:hover {
     text-align: right;
     font-size: 12px;
 }
+
+#credits a {
+    color: white;
+}

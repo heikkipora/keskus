@@ -12,7 +12,7 @@
   <meta property="og:site_name" content="Keskus - Centralen"/>
   <meta property="og:type" content="website"/>
   <meta name="google-site-verification" content="r4wSe8VSzGE8NEbEjbki-yXZ5nhD0s4DSU305FDF8Gs"/>
-  <link rel="stylesheet" href="css/keskus.css?3" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="css/keskus.css?4" type="text/css" media="screen"/>
   <link rel="stylesheet" href="css/keskus-print.css?1" type="text/css" media="print"/>
   <link rel="stylesheet" href="css/imageflow.packed.css" type="text/css" media="screen"/>
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -50,23 +50,22 @@
     });
   </script>
 </head>
-<body>
+<body itemscope itemtype="http://data-vocabulary.org/Organization">
 <img class="hide-on-screen" src="images/logo.gif" style="width: 18cm;"/>
 
 <div id="header">
   <div id="osoite" class="content-slice">
     <p>
-      <span class="address"><a title="Google Maps" href="http://maps.google.fi/maps?f=q&source=s_q&hl=fi&geocode=&q=Etel%C3%A4harju+2,+Loviisa&aq=0&sll=62.593341,27.575684&sspn=11.435124,41.264648&ie=UTF8&hq=&hnear=Etel%C3%A4harju+2,+07920+Loviisa&ll=60.44871,26.235867&spn=0.023833,0.080595&z=14">Eteläharju
-        2, 07900 Loviisa</a></span>
-      <span class="email"><a title="info@keskus-centralen.fi" href="mailto:info@keskus-centralen.fi">info@keskus-centralen.fi</a></span>
-      <span class="phone">050 511 2466 (Merja)</span>
-      <span class="phone">040 511 6466 (Juha)</span>
+      <span class="address" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address"><a title="Google Maps" href="http://maps.google.fi/maps?f=q&source=s_q&hl=fi&geocode=&q=Etel%C3%A4harju+2,+Loviisa&aq=0&sll=62.593341,27.575684&sspn=11.435124,41.264648&ie=UTF8&hq=&hnear=Etel%C3%A4harju+2,+07920+Loviisa&ll=60.44871,26.235867&spn=0.023833,0.080595&z=14"><span itemprop="street-address">Eteläharju 2</span>, <span itemprop="postal-code">07900</span> <span itemprop="locality">Loviisa</span></a></span>
+      <span class="email"><a title="info@keskus-centralen.fi" href="mailto:info@keskus-centralen.fi" itemprop="email">info@keskus-centralen.fi</a></span>
+      <span class="phone" itemprop="telephone">050 511 2466 (Merja)</span>
+      <span class="phone" itemprop="telephone">040 511 6466 (Juha)</span>
     </p>
   </div>
-  <div id="logo" class="content-slice"></div>
+  <div id="logo" class="content-slice"><span itemprop="name">Keskus - Centralen</span></div>
   <div id="esittely" class="content-slice">
-    <p>Keskus - Centralen on Loviisan keskustan tuntumassa, Eteläharjulla, sijaitseva nykyaikainen tapahtumakeskus. Tilamme ovat vuokrattavissa sekä yksityis- että
-      yritystilaisuuksiin. Ota rohkeasti yhteyttä niin mietitään yhdessä miten uudet upeat tilamme täyttävät sinun tarpeesi!<br/><br/><i>Merja ja Juha Saario, keskuksen
+    <p itemprop="description">Keskus - Centralen on Loviisan keskustan tuntumassa, Eteläharjulla, sijaitseva nykyaikainen tapahtumakeskus. Tilamme ovat vuokrattavissa sekä yksityis- että
+      yritystilaisuuksiin. Ota rohkeasti yhteyttä niin mietitään yhdessä miten uudet upeat tilamme täyttävät sinun tarpeesi! <br/><br/><i>Merja ja Juha Saario, keskuksen
         pyörittäjät</i></p>
   </div>
 </div>

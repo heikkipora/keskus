@@ -12,7 +12,7 @@
   <meta property="og:site_name" content="Keskus - Centralen"/>
   <meta property="og:type" content="website"/>
   <meta name="google-site-verification" content="r4wSe8VSzGE8NEbEjbki-yXZ5nhD0s4DSU305FDF8Gs"/>
-  <link rel="stylesheet" href="css/keskus.css?4" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="css/keskus.css?5" type="text/css" media="screen"/>
   <link rel="stylesheet" href="css/keskus-print.css?1" type="text/css" media="print"/>
   <link rel="stylesheet" href="css/imageflow.packed.css" type="text/css" media="screen"/>
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -25,10 +25,6 @@
     function track(category, action, label) {
       _gaq.push(['_trackEvent', category, action, label]);
     }
-    function highlightChapter(id) {
-      $('#tilat p.box').removeClass('highlight');
-      $('#tilat #' + id).addClass('highlight');
-    }
     $(function () {
       new ImageFlow().init({ ImageFlowID:'galleria',
         reflections:false,
@@ -40,12 +36,8 @@
         imagesHeight:0.7,
         imageFocusM:1.4,
         imageCursor:'pointer'});
-      highlightChapter('akvaario');
       $('a').click(function (elem) {
         track('Linkit', $(elem).attr("title"));
-      });
-      $('#galleria img').click(function (elem) {
-        highlightChapter($(elem.target).attr("data-ref"));
       });
     });
   </script>
@@ -74,13 +66,13 @@
   <p class="hide-in-print" style="padding: 0px 20px; font-size: 15px;">Tutustu tiloihimme tarkemmin klikkaamalla allaolevia kuvia.</p>
 
   <div id="galleria" class="imageflow hide-in-print">
-    <img src="images/1.t.jpg?3" longdesc="images/1.jpg?3" data-ref="akvaario"/>
-    <img src="images/2.t.jpg?3" longdesc="images/2.jpg?3" data-ref="akvaario"/>
-    <img src="images/3.t.jpg?3" longdesc="images/3.jpg?3" data-ref="keittio"/>
-    <img src="images/7.t.jpg?3" longdesc="images/7.jpg?3" data-ref="akvaario"/>
-    <img src="images/4.t.jpg?3" longdesc="images/4.jpg?3" data-ref="akvaario"/>
-    <img src="images/5.t.jpg?3" longdesc="images/5.jpg?3" data-ref="akvaario"/>
-    <img src="images/6.t.jpg?3" longdesc="images/6.jpg?3" data-ref="akvaario"/>
+    <img src="images/1.t.jpg?3" longdesc="images/1.jpg?3"/>
+    <img src="images/2.t.jpg?3" longdesc="images/2.jpg?3"/>
+    <img src="images/3.t.jpg?3" longdesc="images/3.jpg?3"/>
+    <img src="images/7.t.jpg?3" longdesc="images/7.jpg?3"/>
+    <img src="images/4.t.jpg?3" longdesc="images/4.jpg?3"/>
+    <img src="images/5.t.jpg?3" longdesc="images/5.jpg?3"/>
+    <img src="images/6.t.jpg?3" longdesc="images/6.jpg?3"/>
   </div>
   <p class="box" id="akvaario">
     <strong>Akvaario</strong> on katutasossa sijaitseva 220 neliömetrin nykyaikainen monitoimitila.
